@@ -2,22 +2,42 @@ import turtle as trtl
 
 # create turtle object
 painter = trtl.Turtle()
-Brush = float(input("YO CUH, HOW BIG U WANT THIS BRUSH TO BE? "))
-Color = str(input("enter a color: "))
 
-painter.pensize(Brush)
-painter.color(Color) # added quotes around red
+Color = str(input("Enter a color lil bro"))
+
+painter.pensize(10)
+painter.color(Color)
 
 # move turtle without marking a line
 painter.penup()
-painter.goto(0, -325)
+painter.goto(350, 265)
 painter.pendown()
 
-# Apply the fill color
+# Draw the Sun
 painter.fillcolor(Color)
 painter.begin_fill()
-painter.circle(300, 360)  # Draw the circle
+painter.circle(60, 360)  # Draw the circle
 painter.end_fill()
+
+#Assign the Grass
+painter.penup()
+painter.goto(350, -200)
+painter.pendown()
+
+painter.fillcolor("green")
+painter.begin_fill()
+painter.circle(60, 360)  # Draw the circle
+painter.end_fill()
+
+
+painter.pensize(10)
+
+
+#Move turtle
+painter.penup()
+painter.goto(-500,0 )
+
+
 
 # create screen object
 wn = trtl.Screen()
