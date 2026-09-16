@@ -1,50 +1,78 @@
 import turtle as trtl
 
-# create turtle object
+#Creating Turtle
 painter = trtl.Turtle()
 
-Color = str(input("Enter a color lil bro"))
+painter.penup()
+painter.goto(-500, 500)
+painter.pendown()
 
-painter.pensize(10)
-painter.color(Color)
+painter.pensize(1)
 
-# move turtle without marking a line
+#Time of Day
+tod = input("Please choose 'day' or 'night': ")
+
+#Background
+if tod == "day":
+    painter.fillcolor("cyan")
+    sky = "cyan"
+    circle = "yellow"
+
+else:
+    painter.fillcolor("black")
+    sky = "black"
+    circle = "white"
+
+#Draw background
+painter.color(sky)
+painter.fillcolor(sky)
+
+painter.begin_fill()
+painter.forward(1000)
+painter.right(90)
+painter.forward(1000)
+painter.right(90)
+painter.forward(1000)
+painter.right(90)
+painter.forward(1000)
+painter.right(90)
+painter.end_fill()
+
+#Draw sun or moon
 painter.penup()
 painter.goto(350, 265)
 painter.pendown()
 
-# Draw the Sun
-painter.fillcolor(Color)
+painter.pensize(10)
+painter.color(circle)
+painter.fillcolor(circle)
+
 painter.begin_fill()
-painter.circle(60, 360)  # Draw the circle
+painter.circle(60)
 painter.end_fill()
 
-#Assign the Grass
+#Draw grass
 painter.penup()
 painter.goto(-500, -200)
 painter.pendown()
-painter.color("green")
 
-#color
+painter.pensize(1)
+painter.color("green")
 painter.fillcolor("green")
+
 painter.begin_fill()
 painter.forward(1000)
 painter.right(90)
-painter.forward(200)
+painter.forward(300)
 painter.right(90)
 painter.forward(1000)
 painter.right(90)
-painter.forward(200)
+painter.forward(300)
 painter.right(90)
 painter.end_fill()
 
-
-#Move turtle
 painter.penup()
 
-
-
-
-# create screen object
+#create screen object
 wn = trtl.Screen()
 wn.mainloop()
