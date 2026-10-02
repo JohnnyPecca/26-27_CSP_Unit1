@@ -9,8 +9,8 @@ painter = trtl.Turtle()
 painter.speed(0)
 painter.color(color1)
 
-answer = "y"
-while (answer == "y"):
+answer = "length"
+while (answer == "length"):
     painter = trtl.Turtle()
     painter.speed(0)
     painter.color(color1)  # Set the starting color for the new turtle
@@ -36,6 +36,6 @@ while (answer == "y"):
         painter.end_fill()
         space = space + 1
 
-    answer = input("again? (y/n): ")
+    answer = input("again? (length/n): ")
 
 wn.bye()
