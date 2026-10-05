@@ -6,9 +6,11 @@ import turtle as trtl
 x = trtl.Turtle()
 x.pensize(40)
 x.circle(20)
-leg = 6
+
+# Make Spider Legs
+leg = 14
 length = 70
-angle = 380 / leg
+angle = 360 / leg
 x.pensize(5)
 n = 0
 while (n < leg):
