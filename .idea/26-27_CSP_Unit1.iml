@@ -6,9 +6,6 @@
     </content>
     <orderEntry type="jdk" jdkName="~\PycharmProjects\26-27_CSP_Unit1\.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="26-27_CSP_Labs" />
   </component>
-  <component name="PackageRequirementsSettings" />
-  <component name="PyDocumentationSettings" />
-  <component name="ReSTService" />
-  <component name="TestRunnerService" />
 </module>
