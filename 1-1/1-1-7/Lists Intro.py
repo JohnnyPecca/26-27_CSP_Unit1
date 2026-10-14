@@ -3,8 +3,8 @@ List2 = ["hello", "world"]
 
 print(List2[1])
 
-print(list2[1])
+print(List2[1])
 
-list2[0] = "Goodbye"
+List2[0] = "Goodbye"
 
-print(list2[0])
+print(List2[0])
