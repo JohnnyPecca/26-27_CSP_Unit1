@@ -1,18 +1,18 @@
 
 import turtle as trtl
 my_turtles = []
-turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
-turtle_colors = ["red", "blue", "green", "gold", "purple", "#EFBFO4"]
+turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "arrow"]
+turtle_colors = ["red", "blue", "green", "gold", "purple", "yellow"]
 for i in range(len(turtle_shapes)):
     t = trtl.Turtle(shape=turtle_shapes[i])
     t.color(turtle_colors[i])
     t.penup()
     my_turtles.append(t)
-startx = 0
-starty = 0
+startingx = 0
+startingy = 0
 direction = 0
 for t in my_turtles:
-    t.goto(startx, starty)
+    t.goto(startingx, startingy)
     t.setheading(direction)
     t.pendown()
     t.forward(50)
