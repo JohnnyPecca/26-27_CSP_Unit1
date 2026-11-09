@@ -6,7 +6,7 @@ stink = str(input("Does your poop stink? Answer Yes or No: "))
 import turtle as trtl
 
 poop = trtl.Turtle()
-poop.speed(5)
+poop.speed(0)
 
 # Define Colors
 color1 = "brown"
@@ -43,22 +43,17 @@ poop.begin_fill()
 poop.circle(30)
 poop.end_fill()
 
-# Draw Left Eye on the Poop
-poop.penup()
-poop.goto(-20, 15)
-poop.pendown()
-poop.color("black")
-poop.begin_fill()
-poop.circle(5)
-poop.end_fill()
+poopX = -20
+for x in range(2):
+    poop.penup()
+    poop.goto(poopX, 15)
+    poop.pendown()
+    poop.color("black")
+    poop.begin_fill()
+    poop.circle(5)
+    poop.end_fill()
+    poopX += 40
 
-# Draw Right Eye on the Poop
-poop.penup()
-poop.goto(20, 15)
-poop.pendown()
-poop.begin_fill()
-poop.circle(5)
-poop.end_fill()
 
 # Draw the Smile on the Poop
 poop.penup()
@@ -68,54 +63,30 @@ poop.pendown()
 poop.pensize(3)
 poop.circle(18, 120)
 
+poop.speed(5)
+currentColor = ""
 # Draw the Green Stink Lines if the user said the Poop Stunk
 if stink in ("yes", "Yes"):
     for z in range(1000000000000000000000000000000000):
         x = z % 2
         if (x == 0):
-            poop.hideturtle()
-            poop.color(color2)
-            poop.pensize(5)
-
-            poop.penup()
-            poop.goto(-50, 100)
-            poop.setheading(90)
-            poop.pendown()
-            poop.forward(40)
-
-            poop.penup()
-            poop.goto(0, 110)
-            poop.setheading(90)
-            poop.pendown()
-            poop.forward(40)
-
-            poop.penup()
-            poop.goto(50, 100)
-            poop.setheading(90)
-            poop.pendown()
-            poop.forward(40)
+            currentColor = color2
         if (x == 1):
-            poop.hideturtle()
-            poop.color(color3)
-            poop.pensize(5)
+            currentColor = color3
 
+        poop.hideturtle()
+        poop.color(currentColor)
+        poop.pensize(5)
+
+        xStart = -50
+        for y in range(3):
             poop.penup()
-            poop.goto(-50, 100)
+            poop.goto(xStart, 100)
             poop.setheading(90)
             poop.pendown()
             poop.forward(40)
+            xStart += 50
 
-            poop.penup()
-            poop.goto(0, 110)
-            poop.setheading(90)
-            poop.pendown()
-            poop.forward(40)
-
-            poop.penup()
-            poop.goto(50, 100)
-            poop.setheading(90)
-            poop.pendown()
-            poop.forward(40)
 
 
 
