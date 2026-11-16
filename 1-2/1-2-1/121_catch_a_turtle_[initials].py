@@ -1,7 +1,7 @@
 # a121_catch_a_turtle.py
 
 #-----import statements-----
-import spot as trtl
+import turtle as trtl
 import random as rand
 #Entry = input(str("Start or Exit"))
 #if Entry not in ("Start", "start"):
@@ -17,11 +17,14 @@ spot = trtl.Turtle()
 spot.shape(spot_shape)
 spot.turtlesize(spot_size)
 spot.color(spot_color)
+score_writers = trtl.Turtle()
 #-----game functions--------
+
+score_writers.goto()
 
 def update_score():
     global score
-    score += 1
+    score += 37
     print(score)
 
 def spot_clicked(x, y):
