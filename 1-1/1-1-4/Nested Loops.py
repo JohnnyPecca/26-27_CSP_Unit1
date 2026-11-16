@@ -13,7 +13,7 @@ answer = "length"
 while (answer == "length"):
     painter = trtl.Turtle()
     painter.speed(0)
-    painter.color(color1)  # Set the starting color for the new turtle
+    painter.color(color1)  # Set the starting color for the new spot
     painter.goto(0, 0)
     angle = int(input("angle: "))
     seg = int(360 / angle)

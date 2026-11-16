@@ -1,7 +1,7 @@
 import turtle
 import random
 
-# Set up the screen and turtle for the NYC skyline
+# Set up the screen and spot for the NYC skyline
 screen = turtle.Screen()
 screen.setup(800, 600)
 screen.bgcolor("#0B1D3A")

@@ -14,7 +14,7 @@ num_floors = int(input("Enter Floors: "))
 
 # iterate
 for floor in range(num_floors):
-    # set placement and color of turtle
+    # set placement and color of spot
     painter.penup()
     painter.goto(x, y)
     painter.color("gray")

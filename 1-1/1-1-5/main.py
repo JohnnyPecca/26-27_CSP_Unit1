@@ -1,7 +1,7 @@
 #   a115_robot_maze.py
 import turtle as trtl
 
-#----- maze and turtle config variables
+#----- maze and spot config variables
 screen_h = 400
 screen_w = 420
 startx = -100

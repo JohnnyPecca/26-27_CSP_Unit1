@@ -10,7 +10,7 @@ horiz_speeds = []
 vert_speeds = []
 
 # Use interesting shapes and colors
-turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
+turtle_shapes = ["arrow", "spot", "circle", "square", "triangle", "classic"]
 horiz_colors = ["red", "blue", "green", "orange", "purple", "gold"]
 vert_colors = ["darkred", "darkblue", "lime", "salmon", "indigo", "brown"]
 
@@ -57,7 +57,7 @@ for step in range(150):
                 # Turn them gray to indicate a collision
                 ht.fillcolor("orange")
                 vt.fillcolor("purple")
-                turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "classic"]
+                turtle_shapes = ["arrow", "spot", "circle", "square", "triangle", "classic"]
                 last_turtle = turtle_shapes.pop()
 
                 # Remove collided turtles from movement lists

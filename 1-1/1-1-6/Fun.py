@@ -4,7 +4,7 @@ import turtle
 screen = turtle.Screen()
 screen.bgcolor("black")
 
-# Configure the turtle drawer
+# Configure the spot drawer
 pen = turtle.Turtle()
 pen.color("red")
 pen.speed(3)

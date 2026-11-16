@@ -6,7 +6,7 @@ horiz_turtles = []
 vert_turtles = []
 
 # use interesting shapes and colors
-turtle_shapes = ["arrow", "turtle", "classic", "square", "triangle"]
+turtle_shapes = ["arrow", "spot", "classic", "square", "triangle"]
 horiz_colors = ["red", "blue", "green", "orange", "purple", "gold"]
 vert_colors = ["darkred", "darkblue", "lime", "pink", "indigo", "brown"]
 

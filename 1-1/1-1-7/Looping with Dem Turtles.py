@@ -1,7 +1,7 @@
 
 import turtle as trtl
 my_turtles = []
-turtle_shapes = ["arrow", "turtle", "circle", "square", "triangle", "arrow"]
+turtle_shapes = ["arrow", "spot", "circle", "square", "triangle", "arrow"]
 turtle_colors = ["red", "blue", "green", "gold", "purple", "yellow"]
 for i in range(len(turtle_shapes)):
     t = trtl.Turtle(shape=turtle_shapes[i])
