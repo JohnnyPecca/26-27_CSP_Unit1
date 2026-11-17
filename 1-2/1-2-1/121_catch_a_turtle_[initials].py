@@ -1,10 +1,8 @@
-# a121_catch_a_turtle.py
 
 #-----import statements-----
 import turtle as trtl
 import random as rand
-#Entry = input(str("Start or Exit"))
-#if Entry not in ("Start", "start"):
+
 
 #-----game configuration----
 spot_color = "pink"
@@ -17,14 +15,28 @@ spot = trtl.Turtle()
 spot.shape(spot_shape)
 spot.turtlesize(spot_size)
 spot.color(spot_color)
+spot.penup()
 score_writers = trtl.Turtle()
+score_writers.penup()
+score_writers.goto(-315,315)
+score_writers.pendown()
+score_writers.right(90)
+score_writers.forward(100)
+score_writers.right(90)
+score_writers.forward(100)
+score_writers.right(90)
+score_writers.forward(100)
+score_writers.right(90)
+score_writers.forward(100)
+score_writers.hideturtle()
 #-----game functions--------
 
-score_writers.goto()
 
 def update_score():
     global score
-    score += 37
+    score += 1
+    score.writer.clear()
+    score_writer.write(score, font=font_setup)
     print(score)
 
 def spot_clicked(x, y):
